@@ -1,0 +1,30 @@
+{
+  "node": "v24.22.1",
+  "skills_cli": "1.7.6",
+  "scope": "project Codex copy installation; no global overrides",
+  "source": "sincere820/chenyi-editing-skill",
+  "checks": [
+    {
+      "check": "remote_discovery",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "check": "remote_install",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "check": "registered_install",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    {
+      "check": "remote_installed_files_match_source",
+      "status": "pass",
+      "files": 33
+    }
+  ],
+  "tested_commit": "d74e88d",
+  "date": "2026-11-04"
+}

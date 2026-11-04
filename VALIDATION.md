@@ -39,7 +39,22 @@ python .agents/skills/chenyi-editing/scripts/smoke_test.py --work /new/test-outp
 
 ## 远程检查
 
-源码推送后执行并记录。当前：待验证，不能以本地安装代替GitHub远程安装通过。
+已对公开源码提交 `d74e88d` 执行以下真实命令，全部退出码0：
+
+```sh
+npx skills@1.7.6 add sincere820/chenyi-editing-skill --list
+npx skills@1.7.6 add sincere820/chenyi-editing-skill --skill chenyi-editing --agent codex --copy --yes --json
+npx skills@1.7.6 list --agent codex --json
+```
+
+- 远程发现：1个技能 chenyi-editing。
+- 全新目录项目级安装：status=installed，agent=Codex，mode=copy。
+- CLI登记：chenyi-editing，project scope。
+- 安装完整性：全部33个文件与发布源码逐字节一致。
+- 首次远程安装已成功，但严格比对发现Windows Git自动转换了14个文本文件的换行；添加`.gitattributes`保留技能原字节后重新安装通过。
+- 重测期间曾有一次GitHub TLS握手失败，未关闭证书验证，正常重试成功。
+
+机器可读结果见 [remote-results.json](validation/remote-results.json)。浏览器刷新曾因额度使自动审批未完成，因此不报告网页截图复核通过；源码发布由git push成功返回及远程CLI克隆安装确认。
 
 ## 未测试 / 需人工完成
 
