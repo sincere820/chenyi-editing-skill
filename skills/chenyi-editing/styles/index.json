@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "default_style": "CY-001",
+  "styles": [
+    {
+      "id": "CY-001",
+      "name": "陈一经典口播",
+      "version": "2.0.0",
+      "status": "active",
+      "folder": "CY-001-陈一经典口播",
+      "profile": "CY-001-陈一经典口播/profile.json",
+      "preview": "CY-001-陈一经典口播/CY-001-效果图.jpg",
+      "description": "手剪样片衍生：白黄双行常驻标题、粗宋胸口字幕、100%黑影、自然气口、丰富且不重复的语义B-roll"
+    }
+  ]
+}
