@@ -1,0 +1,8 @@
+# Preserve the archive's exact source bytes across Windows and Unix clones.
+skills/** -text
+*.zip -text
+*.jpg -text
+README.md text eol=lf
+RIGHTS.md text eol=lf
+VALIDATION.md text eol=lf
+tools/*.py text eol=lf
